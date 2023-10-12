@@ -1,5 +1,5 @@
 # print("Hello World")
-
+import doctest
 
 # TODO: DEFINE A FUNCTION TO TAKE IN TWO NUMBERS AND RETURN THE SUM
 
@@ -92,14 +92,82 @@
 
 # TODO: MESSING WITH STORAGE DATA TYPES
 
-# Tuple (can not change stored data)
+# Tuple (can not change stored data) ex code = tuple_name = (value , value , value)
 
 # tpl = ("Jess", "Ron", "Max", "Rachel")
 # print(tpl)
 
-# List (can change stored data)
+# List (can change stored data) ex code = list_name = [value , value , value]
 
 # lst = [1 , 2 , 3]
 # lst.insert(0 , "1")
 # lst.append(True)
+# print(lst)
+
+# UNPACK THE LIST ABOVE (lst)
+# one,two,three = lst
+
+# printing using multiple prints
+# print(one)
+# print(two)
+# print(three)
+
+# printing using single print
+# print(str(one) + "\n" + str(two) + "\n" + str(three))
+
+# accessing certain values in list using index
+# print(lst[0:2])
+
+# updating values in a list
+# names1 = ["John" , "Beck" , "Lucy"]
+# names1[0] = "Danny Boy"
+# print(names1)
+
+# adding list together to make one big list
+# names2 = ["Kelsi" , "Kevin" , "Keylan" , "Karson"]
+# print(names2)
+# biglist = names1 + names2
+# print(biglist)
+
+# changing tuple to list
+# tpl = (1 , 2 , 3)
+# tpl = list(tpl)
+# print(tpl)
+
+# Dictionary (key : value pairs) ex code = dictionary_name = {key:value, key:value}
+#            unique : can be anything
+
+# dictionary = {}
+
+# adding values to dictionary
+# dictionary.update({1: "hello", 2: "there"})
+# print(dictionary)
+# dictionary[3] = "Testing the addition!"
+# print(dictionary)
+
+# updating value to a pair
+# dictionary[1] = "Todd says hello!"
+# print(dictionary)
+
+# many ways to delete a pair
+# dictionary.pop(1)
+# print(dictionary)
+# del dictionary[2]
+# print(dictionary)
+
+# TODO: USING FOR LOOP TO POPULATE A LIST WITH INFO FROM A TUPLE
+
+# EXTRA TASK (function definition for code below)
+# def item_multiplier(num):
+#     num = int(num) * 2
+#     return str(num)
+
+
+# tpl = ("1", "2", "3")
+# lst = []
+# for item in tpl:
+# take item and double it / values should stay a string (EXTRA: Make a function to do this task)
+
+# this should return ["2", "4", "6"]
+#     lst.append(item_multiplier(item))
 # print(lst)
