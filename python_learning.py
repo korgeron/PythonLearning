@@ -134,6 +134,64 @@ import doctest
 # tpl = list(tpl)
 # print(tpl)
 
+
+# TODO: USING FOR LOOP TO POPULATE A LIST WITH INFO FROM A TUPLE
+
+# EXTRA TASK (function definition for code below)
+# def item_multiplier(num):
+#     num = int(num) * 2
+#     return str(num)
+
+
+# tpl = ("1", "2", "3")
+# lst = []
+# for item in tpl:
+# take item and double it / values should stay a string (EXTRA: Make a function to do this task)
+
+# this should return ["2", "4", "6"]
+#     lst.append(item_multiplier(item))
+# print(lst)
+
+
+# TODO: LIST COMPREHENSION
+
+# list1 = [2, 3, 4, 5, 6]
+
+""" LONG WAY """
+# list2 = []
+# for each in list1:
+#     list2.append(each*each)
+# print(list2)
+
+""" SHORT WAY """
+# list2 = [each*each for each in list1]
+# print(list2)
+
+
+# TODO: LIST COMPREHENSION WITH IF STATEMENT
+
+""" LONG WAY """
+# list1 = [2, 3, 4, 5, 6]
+# list2 = []
+# for each in list1:
+#     if each % 2 == 0:
+#         list2.append(each*each)
+# print(list2)
+
+""" SHORT WAY """
+# list2 = [item*item for item in list1 if item % 2 == 0]
+# print(list2)
+
+
+# TODO: LIST COMPREHENSION WITH IF / ELSE STATEMENT
+
+""" Given a list of names, only change the name John to William """
+# names = ["John", "Danny", "John", "Kelsi", "Kevin", "Johnny"]
+# print(names)
+# changed_names = [name.replace(name, "William") if name == "John" else name for name in names]
+# print(changed_names)
+
+# TODO: DICTIONARIES
 # Dictionary (key : value pairs) ex code = dictionary_name = {key:value, key:value}
 #            unique : can be anything
 
@@ -155,45 +213,27 @@ import doctest
 # del dictionary[2]
 # print(dictionary)
 
-# TODO: USING FOR LOOP TO POPULATE A LIST WITH INFO FROM A TUPLE
-
-# EXTRA TASK (function definition for code below)
-# def item_multiplier(num):
-#     num = int(num) * 2
-#     return str(num)
-
-
-# tpl = ("1", "2", "3")
-# lst = []
-# for item in tpl:
-# take item and double it / values should stay a string (EXTRA: Make a function to do this task)
-
-# this should return ["2", "4", "6"]
-#     lst.append(item_multiplier(item))
-# print(lst)
-
 
 # TODO: APPLICATION THAT CAN ADD / READ FROM A "SCHOOL DATABASE"
-s_info = {"SKJ": "Southern Karate Jiujitsu... a great martial arts school",
-          "HS": "Home School... my wife is a great teacher!"}
+# s_info = {"SKJ": "Southern Karate Jiujitsu... a great martial arts school",
+#           "HS": "Home School... my wife is a great teacher!"}
+#
+# user_input = ""
 
-user_input = ""
-
-print("Hello There!")
-while user_input != "none":
-    user_input = input(
-        "Add a school or look up your school by code! ")
-
-    if user_input.upper() == "ADD":
-        key = input("Enter a school code... ")
-        value = input("Enter the school info... ")
-        s_info[key.upper()] = value.capitalize()
-        print("School info added!")
-    else:
-        if user_input.upper() in s_info:
-            print(s_info[user_input.upper()])
-        elif user_input == "none":
-            print("Have a great day!")
-        else:
-            print("School not found in database... TRY AGAIN!")
-
+# print("Hello There!")
+# while user_input != "none":
+#     user_input = input(
+#         "Add a school or look up your school by code! ")
+#
+#     if user_input.upper() == "ADD":
+#         key = input("Enter a school code... ")
+#         value = input("Enter the school info... ")
+#         s_info[key.upper()] = value.capitalize()
+#         print("School info added!")
+#     else:
+#         if user_input.upper() in s_info:
+#             print(s_info[user_input.upper()])
+#         elif user_input == "none":
+#             print("Have a great day!")
+#         else:
+#             print("School not found in database... TRY AGAIN!")
