@@ -215,25 +215,25 @@ import doctest
 
 
 # TODO: APPLICATION THAT CAN ADD / READ FROM A "SCHOOL DATABASE"
-# s_info = {"SKJ": "Southern Karate Jiujitsu... a great martial arts school",
-#           "HS": "Home School... my wife is a great teacher!"}
-#
-# user_input = ""
+s_info = {"SKJ": "Southern Karate Jiujitsu... a great martial arts school",
+          "HS": "Home School... my wife is a great teacher!"}
 
-# print("Hello There!")
-# while user_input != "none":
-#     user_input = input(
-#         "Add a school or look up your school by code! ")
-#
-#     if user_input.upper() == "ADD":
-#         key = input("Enter a school code... ")
-#         value = input("Enter the school info... ")
-#         s_info[key.upper()] = value.capitalize()
-#         print("School info added!")
-#     else:
-#         if user_input.upper() in s_info:
-#             print(s_info[user_input.upper()])
-#         elif user_input == "none":
-#             print("Have a great day!")
-#         else:
-#             print("School not found in database... TRY AGAIN!")
+user_input = ""
+
+print("Hello There!")
+while user_input != "exit":
+    user_input = input(
+        "Add a school, look up your school by code, or enter exit to leave. ")
+
+    if user_input.upper() == "ADD":
+        key = input("Enter a school code... ")
+        value = input("Enter the school info... ")
+        s_info[key.upper()] = value.capitalize()
+        print("School info added!")
+    else:
+        if user_input.upper() in s_info:
+            print(s_info[user_input.upper()])
+        elif user_input == "none":
+            print("Have a great day!")
+        else:
+            print("School not found in database... TRY AGAIN!")
